@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pupils</title>
+</head>
+<body>
+    {% for pupil in pupils %}
+        <a href="{% url 'pupil' pupil.id %}">
+            <span style="font-size: 30px;">{{pupil.id}}</span>
+            <h3>{{pupil.name}}</h3>
+        </a>
+    {% endfor %}
+</body>
+</html>
